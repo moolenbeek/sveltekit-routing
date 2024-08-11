@@ -20,6 +20,14 @@
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
 	import { storePopup } from '@skeletonlabs/skeleton';
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
+
+	import { page } from "$app/stores";
+  import { TabGroup, Tab, TabAnchor } from "@skeletonlabs/skeleton";
 </script>
 
+<TabGroup>
+  <TabAnchor href="/" selected={$page.url.pathname === "/"}>Home</TabAnchor>
+  <TabAnchor href="/about" selected={$page.url.pathname === "/about"}>About</TabAnchor>
+  <TabAnchor href="/contact" selected={$page.url.pathname === "/contact"}>Contact</TabAnchor>
+</TabGroup>
 <slot />
