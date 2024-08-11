@@ -28,6 +28,7 @@
 <TabGroup>
   <TabAnchor href="/" selected={$page.url.pathname === "/"}>Home</TabAnchor>
   <TabAnchor href="/about" selected={$page.url.pathname === "/about"}>About</TabAnchor>
-  <TabAnchor href="/contact" selected={$page.url.pathname === "/contact"}>Contact</TabAnchor>
+	<TabAnchor href="/contact" selected={$page.url.pathname === "/contact"}>Contact</TabAnchor>
+	<TabAnchor href="/blog" selected={$page.url.pathname === "/blog"}>Blog</TabAnchor>
 </TabGroup>
 <slot />
