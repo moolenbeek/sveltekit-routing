@@ -7,11 +7,7 @@
   <div class="space-y-5">
     <br>
     <a href="/blog">blog</a> / {$page.params.slug}
-    
-
-    
     <h1>{data.post.title}</h1>
     <div>{@html data.post.content}</div>
-    
   </div>
 </div>
