@@ -1,7 +1,11 @@
 {
 	"/": [],
 	"/about": [],
-	"/blog": [],
-	"/blog/[slug]": [],
+	"/blog": [
+		"src/routes/blog/+page.server.js"
+	],
+	"/blog/[slug]": [
+		"src/routes/blog/[slug]/+page.server.js"
+	],
 	"/contact": []
 }
